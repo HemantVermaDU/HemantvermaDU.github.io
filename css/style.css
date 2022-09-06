@@ -487,7 +487,7 @@ Header
 		font-size: 18px;
 	}
 	.home-text h1{
-		font-size: 50px;
+		font-size: 40px;
 		text-transform: capitalize;
 
 	}
@@ -528,33 +528,26 @@ Header
 	margin: auto;
 	border-radius: 10px;
 }
-.about-img .img-box:hover{
-	 box-shadow: 0 4px 8px 0 #e02f6b, 0 6px 20px 0 #efa2b4;
-}
 
 .about-img .img-box img{
 	width: 100%;
 }
 .about-text h3{
 	text-transform: capitalize;
-	font-size: 20px;
+	font-size: 35px;
 	margin: 20px 0;
+	text-align: center;
+	font-weight: 700;
 }
 .about-text .skills{
 	display: flex;
 	flex-wrap: wrap;
 }
 .about-text .skill-item{
-	background-color: var(--white-alpha-25);
-	border: 1px solid var(--white-alpha-40);
 	padding: 5px 15px;
-	text-transform: capitalize;
 	margin: 0 10px 10px 0;
-	border-radius: 20px;
-	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.about-text .skill-item:hover{
-	 box-shadow: 0 4px 8px 0 #e02f6b, 0 6px 20px 0 #efa2b4;
+	
+	 
 }
 .about-tabs{
 	margin-top: 20px;
@@ -899,3 +892,25 @@ margin-bottom: 30px;
 		font-size: 20px;
 	}
 }
+
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+
+
