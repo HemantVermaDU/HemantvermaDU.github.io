@@ -528,6 +528,10 @@ Header
 	margin: auto;
 	border-radius: 10px;
 }
+.about-img .img-box:hover{
+	 box-shadow: 0 4px 8px 0 #e02f6b, 0 6px 20px 0 #efa2b4;
+}
+
 .about-img .img-box img{
 	width: 100%;
 }
@@ -547,6 +551,10 @@ Header
 	text-transform: capitalize;
 	margin: 0 10px 10px 0;
 	border-radius: 20px;
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.about-text .skill-item:hover{
+	 box-shadow: 0 4px 8px 0 #e02f6b, 0 6px 20px 0 #efa2b4;
 }
 .about-tabs{
 	margin-top: 20px;
@@ -844,6 +852,7 @@ margin-bottom: 30px;
 	 .home-img .img-box{
 	 	max-width: 300px;
 	 }
+
 	 .home-text .btn{
 	 	margin:0 7px 15px;
 	 }
