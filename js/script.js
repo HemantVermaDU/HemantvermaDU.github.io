@@ -1,4 +1,4 @@
-
+document. addEventListener("contextmenu", function (e){ e. preventDefault(); }, false);
 
 window.addEventListener("load",() =>{
     document.querySelector(".main").classList.remove("hidden");
@@ -96,5 +96,7 @@ tabsContainer.addEventListener("click",(e)=>{
  	portfolioItem.querySelector(".portfolio-item-details").innerHTML;
 
  }
+
+
 
 
