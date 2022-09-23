@@ -511,6 +511,11 @@ Header
 		width: 100%;
 		border-radius: 50%;
 	}
+
+.home-img .img-box{
+animation: bounceTop 5s ease-in-out infinite;
+}
+
  /* Home section end */
 /* About section */
 .about-img{
@@ -654,6 +659,20 @@ margin: 0 0 10px;
 /* portfolio section start*/
 .portfolio-section{
 	padding-bottom: 50px;
+}
+
+.portfolio-item{
+  opacity: 0;
+  animation: fadeInTopp 2s ease forwards;
+}
+@keyframes  fadeInTopp{
+0%{
+  transform: translateY(-100px);
+}
+100%{
+  opacity: 1;
+  transform: translateY(0px);
+}
 }
 .portfolio-item{
 	width: calc((100% / 3) - 30px);
@@ -891,6 +910,19 @@ margin-bottom: 30px;
 	.pp-header h3{
 		font-size: 20px;
 	}
+}
+.home-text h2{
+  opacity: 0;
+  animation: fadeInToptext 2s ease forwards;
+}
+@keyframes  fadeInToptext{
+0%{
+  transform: translateX(-100px);
+}
+100%{
+  opacity: 1;
+  transform: translateX(0px);
+}
 }
 
 .wave {
