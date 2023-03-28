@@ -510,6 +510,13 @@ Header
 	.home-img .img-box img{
 		width: 100%;
 		border-radius: 50%;
+		-webkit-filter: grayscale(1);  
+      -webkit-transition: all .5s ease-in-out; 
+	}
+	.home-img .img-box img:hover{
+		filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.01);
 	}
 
 .home-img .img-box{
@@ -525,6 +532,9 @@ animation: bounceTop 5s ease-in-out infinite;
 .about-text{
 	width: 60%;
 	padding: 0 15px;
+}
+.about-text p{
+	margin-top: 10px;
 }
 .about-img .img-box{
 	background-color:var(--white-alpha-25);
@@ -678,12 +688,15 @@ margin: 0 0 10px;
 	width: calc((100% / 3) - 30px);
 	margin: 0 15px 30px;
 }
+ 
 .portfolio-item-thumbnail{
 	padding: 10px;
 	background-color: var(--white-alpha-25);
 	border: 1px solid var(--white-alpha-40);
 	border-radius: 10px;
-
+}
+.portfolio-item-thumbnail:hover{
+	transform: translateY(-10px);
 }
 .portfolio-item-thumbnail img{
 	width: 100%;
