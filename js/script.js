@@ -1,5 +1,4 @@
-document. addEventListener("contextmenu", function (e){ e. preventDefault(); }, false);
-
+ 
 window.addEventListener("load",() =>{
     document.querySelector(".main").classList.remove("hidden");
     document.querySelector(".home-section").classList.add("active");
@@ -97,6 +96,43 @@ tabsContainer.addEventListener("click",(e)=>{
 
  }
 
+ // GSAP
+
+ gsap.to(".skillheading",{
+    text:{value:"Front End Developer | PHP Laravel Developer"},
+    duration:4,delay:1,ease:"none"
+})
+
+
+    gsap.from(".anim1", {
+        x: '-100',
+        opacity: 0,
+        duration:3,
+      
+    }) 
+      gsap.from(".anim2", {
+        x: '100',
+        opacity: 0,
+        duration:3,
+       
+    }) 
+ 
+ function firstPageAnim() {
+    var t1 = gsap.timeline();
+
+    t1.from(".social-links .fab", {
+        x: '-50',
+        opacity: 0,
+        duration:1,
+        delay:0.5,
+        stagger:0.5,
+    })
+
+}
+
+firstPageAnim();
+
+ 
 
 
 
